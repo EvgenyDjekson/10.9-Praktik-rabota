@@ -15,21 +15,18 @@ int main()
     {
         std::cout << "There is no solution!" << std::endl;
     }
-    else if (discriminant  > 0) {
 
+    else if (discriminant  > 0)
+    {
        float x1 = (-b + std::sqrt(discriminant)) / (2 * a);
        float x2 = (-b - std::sqrt(discriminant)) / (2 * a);
-       std::cout << "Root 1, 2: " << x1 << ", " << x1 << std::endl;
+       std::cout << "Ansver: "<<" x1 = " << x1 << ", x2 =  " << x1 << std::endl;
     }
-        else if (discriminant == 0)
-        {
-            float x = b + std::sqrt(discriminant * discriminant) / (2 * a);
-            std::cout << "Root: " << discriminant << std::endl;
-        }
-        else
-        {
-            std::cout << "Complex scenario is not supported!" << std::endl;
-        }
-    
+    else if (discriminant == 0)
+    {
+       float x = (-b + std::sqrt(discriminant)) / (2 * a);
+       std::cout << "Ansver: " << " x = " << x << ", x2 =  "<< std::endl;
+    }
+      
     return 0;
 }
