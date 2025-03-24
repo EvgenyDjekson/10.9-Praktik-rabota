@@ -7,7 +7,7 @@ int main()
 {
     float a, b, c;
     std::cout << "a, b, c:";
-    std::cin >> a >> b;
+    std::cin >> a >> b >> c;
     if (a < 0)
     {
         std::cout << "Not a quadratic equation!" << std::endl;
