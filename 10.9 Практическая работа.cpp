@@ -14,8 +14,8 @@ int main()
     }
     else if (b > 0)
     {
-        float discriminant = b * c - 4 * a * b;
-        return 0;
+        float discriminant = (b * b) - 4 * a * c;
+        
         if (discriminant > 1)
         {
             float x1 = (-b + std::sqrt(discriminand)) / (2 * a);
@@ -32,4 +32,5 @@ int main()
             std::cout << "Complex scenario is not supported!" << std::endl;
         }
     }
+    return 0;
 }
